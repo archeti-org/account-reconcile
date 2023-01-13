@@ -5,17 +5,17 @@
     "name": "Account Reconciliation Widget Partial",
     "summary": """
         Allow to modifiy the reconcile amount for partial payments""",
-    "version": "12.0.1.0.1",
+    "version": "15.0.1.0.1",
     "license": "AGPL-3",
     "author": "Creu Blanca,Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/account-reconcile",
     "depends": [
-        "account",
+        "account_accountant",
     ],
-    "data": [
-        "views/assets.xml",
-    ],
-    "qweb": [
-        "static/src/xml/account_reconciliation.xml",
-    ],
+    "data": [],
+    "assets": {
+        "web.assets_qweb": [
+            "account_reconciliation_widget_partial/static/src/xml/account_reconciliation.xml",
+        ],
+    },
 }
